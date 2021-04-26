@@ -91,6 +91,8 @@ html\
 
 * 有的服务器软件，默认可能不认识 wasm 后缀的文件。导致在 http 请求中返回的 mime 类型不对，导致不能正确加载。nginx 的话需要更新一个叫 mime.type 的配置项，其它服务器软件可能会有类似的情况。
 
+* golang 编译为 wasm 大概要3MB多，感觉不是特别适合 web 场景。同时 Node 场景中，有 [Nodejs 版本的 jieba 分词](https://github.com/yanyiwu/nodejieba)。
+
 ## 待完成的工作
 
 * 不知道 jiebago 的开发者还在不在维护那个项目。已经有一段时间没更新了。可能需要自己实现一个（有可能不需要）
